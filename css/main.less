@@ -1,0 +1,37 @@
+/*At:2015-10-21 by likuan*/
+@import url(import.css);
+@import url(global.less);
+@import url(less.less);
+//背景
+.bg-c {
+	position: fixed;
+	background: url(img/light.png) center no-repeat;
+	background-size: 70%;
+	width: 1730px;
+	height: 1730px;
+	left: 50%;
+	margin-left: -870px;
+	top: -520px;
+	.z-(0);
+	opacity: 0.6;
+}
+.bg-c.rotate {
+	-webkit-animation: rotate 18s  infinite  linear;
+}
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.dd{
+	.w;
+	.h;
+
+}
+
+//媒体查询
+@import url(media.less);

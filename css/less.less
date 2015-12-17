@@ -1,0 +1,76 @@
+//At:2015-10-21 by likuan
+//全局尺寸和颜色 at:2015-10-21 by lk###################################
+@zt:"Microsoft Yahei", Verdana, "Arial Unicode MS",serif;
+@fz:14px;//全局字体大小
+@c-m:#ff2d4b;//全局主字体颜色
+@c-d:#98A0AE;//全局副字体颜色
+@c-bg:#FEC35D;//背景色
+@bdrs:6px;//全局块圆角
+//字体 ###################################
+@ztv:Verdana,serif;
+@zta:Arial,serif;
+@ztt:Tahoma,serif;
+@ztyh:"Microsoft Yahei",serif;
+@zts:"宋体",serif;
+//常用颜色 ###################################
+@f5:#f5f5f5;
+@f:#fff;
+@0:#000;
+@3:#333;
+@e1:#e1e1e1;
+@red:#f00;
+@blue:#00f;
+@green:#008000;
+@tit-s:#444;
+@des-s:#a2a2a2;
+//常用简写 ###################################
+@a:auto;@hide:hidden;@show:block;@bds:1px solid;@bdx:1px dotted;@l:left;@r:right;@c:center;@b:bottom;@t:top;@nr:no-repeat;@n:none;@noimg:'noimg.css';
+//常用含参变量 ###################################
+//模型
+.w(@x:@a){width:@x}.h(@x:@a){height:@x}.o(@x:@hide){overflow:@x}.wh(@x:@a,@y:@a){.w(@x);.h(@y)}.wo(@x:@a,@y:@hide){width:@x;overflow:@y}.who(@x:@a,@y:@a,@z:@hide){.w(@x);.h(@y);.o(@z)}
+.p(@x:0){padding:@x}.pl(@x:0){padding-left:@x}.pr(@x:0){padding-right:@x}.pt(@x:0){padding-top:@x}.pb(@x:0){padding-bottom:@x}.plr(@x:0){.pl(@x);.pr(@x);}.plr-(@x:0,@y:0){.pl(@x);.pr(@y);}.ptb(@x:0){.pt(@x);.pb(@x);}.ptb-(@x:0,@y:0){.pt(@x);.pb(@y);}
+.m(@x:0){margin:@x}.ml(@x:0){margin-left:@x}.mr(@x:0){margin-right:@x}.mt(@x:0){margin-top:@x}.mb(@x:0){margin-bottom:@x}.pm(@x:0,@y:0){.p(@x);.m(@y)}.mtb(@x:0){.mt(@x);.mb(@x);}.mtb-(@x:0,@y:0){.mt(@x);.mb(@y);}.mlr(@x:0){.ml(@x);.mr(@x);}.mlr-(@x:0,@y:0){.ml(@x);.mr(@y);}
+.db(@x:block){display:@x}.hide(@x:@n){display:@x}.show(@x:black){display:@x}
+//背景
+.bgc(@x:@f){background-color:@x}.bgi(@x:'space.css'){background-image: url(@x)}.bgp(@x:@c){ background-position:@x}.bgp-(@x:@c,@y:@c){background-position:@x@y}.bgr(@x:@nr){ background-repeat:@x}
+.bg(@x:@f url('') 0 0@nr){background:@x}.bg-(@x:@f,@y:'space.css',@z:@c,@v:@nr){background:@x url(@y)@z@v}
+.bgs(@x:100%){ -webkit-background-size:@x; background-size:@x;}.bgs-(@x:auto,@y:auto){-webkit-background-size:@x@y;background-size:@x@y}
+//边框
+.bd(@x:@bds@e1){ border:@x}.bd-(@x:1px,@y:solid,@z:@e1){border:@x@y@z}.bdx(@x:1px@e1){border:@x dotted}.bdx-(@x:1px,@y:@e1){border:@x@y dotted}
+.bdt(@x:@bds@e1){border-top:@x}.bdr(@x:@bds@e1){ border-right:@x}.bdb(@x:@bds@e1){ border-bottom:@x}.bdl(@x:@bds@e1){ border-left:@x}
+.bdw(/*边框宽*/@x:1px){border-width:@x}
+.bdc(/*边框色*/@x:@e1){border-color:@x}
+.bds(/*边框样式*/@x:dotted){ border-style:@x}
+.bdn(@x:none){ border:@x}
+.bdrs(@x:@bdrs){-webkit-border-radius:@x;-moz-border-radius:@x;border-radius:@x;}
+.boxs(@x){box-shadow:@x}
+//位置
+.fl(@x:@l){float:@x}.fr(@x:@r){float:@x}
+.poa(@x:absolute){position:@x}
+.por(@x:relative){position:@x}
+.pof(@x:fixed){position:@x}
+.z-(@x:1){z-index:@x}
+.t(@x:0){top:@x}.b(@x:0){bottom:@x}.l(@x:0){left:@x}.r(@x:0){right:@x}
+//颜色
+.c(@x:@0){color:@x}
+.c-m(@x:@c-m){color:@x}
+.c-d(@x:@c-d){color:@x}
+//文字
+.f(@x:@fz,@y:@x*2){font:400@x/@y normal}
+.ff(@x:@ztyh){font-family:@x}
+.fz(@x:@fz){font-size:@x}
+.fs(@x:normal){ font-style:@x}
+.td(@x:none){ text-decoration:@x}
+.ta(@x:center){ text-align:@x}
+.tal(@x:left){ text-align:@x}
+.ti(@x:12px){text-indent:@x}
+.fw(@x:normal){ font-weight:@x}
+.lh(@x:@fz*2){ line-height:@x}
+.lhh(@x:45px,@y:@x){line-height:@x;height:@y}
+.zjj(@x:justify){/*文字居中对齐*/letter-spacing:normal;text-align:@x;}
+.zqq(){/*英文强制换行*/word-wrap:break-word;word-break:break-all;}
+//其他
+.space(/*宽@a|高1px|背景@e1*/@x:@a,@y:1px,@z:@e1){.w(@x);.o;.h(@y);.f(0);clear: both;.m(0@a);.bgc(@z);}
+.space-(/*宽@a|高10|边色|背景*/@x:@a,@y:10px,@z:@e1,@v:@f5){.w(@x);.h(@y);.o;.bdt(@bds@z);.bdb(@bds@z);.f(0);clear: both;.m(0@a);.bgc(@v)}
+.ddd(@x:1){text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:@x; -webkit-box-orient: vertical}
+//less end @arguments############################################################

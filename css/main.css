@@ -1,0 +1,226 @@
+/*At:2015-10-21 by likuan*/
+@import url(import.css);
+body,
+div,
+form,
+img,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font: 400 14px/28px normal;
+  font-weight: normal;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft Yahei", Verdana, "Arial Unicode MS", serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%!important;
+}
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+}
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+a.a-btn,
+a.a-btn:visited,
+a.a-btn:hover,
+a.a-btn:active,
+a.a-btn:focus {
+  text-decoration: none;
+  display: block;
+}
+samp {
+  font-family: "Microsoft Yahei", Verdana, "Arial Unicode MS", serif;
+}
+.wid100b {
+  width: 100%;
+}
+.hei100b {
+  height: 100%;
+}
+.waikuang {
+  background-color: #FEC35D;
+  position: relative;
+}
+.bg-c {
+  position: fixed;
+  background: url(img/light.png) center no-repeat;
+  background-size: 70%;
+  width: 1730px;
+  height: 1730px;
+  left: 50%;
+  margin-left: -870px;
+  top: -520px;
+  z-index: 0;
+  opacity: 0.6;
+}
+.bg-c.rotate {
+  -webkit-animation: rotate 18s  infinite  linear;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.dd {
+  width: auto;
+  height: auto;
+}
+@media (max-width: 320px) {
+  /*媒体查询ios*/
+  body,
+  .waikuang,
+  .hong-bg {
+    min-height: 480px;
+  }
+  .hx-hb {
+    top: 16px;
+  }
+  .hx-hb-top {
+    height: 106px;
+  }
+  .t-sm {
+    margin-top: -14px;
+    height: 121px;
+  }
+}
+@media (max-width: 320px) and (max-width: 375px) and (min-device-height: 568px) {
+  /*媒体查询ios5*/
+  body,
+  .waikuang,
+  .hong-bg {
+    min-height: 568px;
+  }
+  .hx-hb {
+    top: 50px;
+  }
+  .hx-hb-top {
+    height: 136px;
+  }
+  .t-sm {
+    margin-top: 40px;
+    height: 121px;
+  }
+}
+@media (min-width: 360px) and (max-width: 375px) {
+  body,
+  .waikuang,
+  .hong-bg {
+    min-height: 640px;
+  }
+  .hx-hb {
+    top: 50px;
+  }
+  .hx-hb-top {
+    height: 156px;
+  }
+  .t-sm {
+    margin-top: 40px;
+    height: 121px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  /*媒体查询安卓设备*/
+  body,
+  .waikuang,
+  .hong-bg {
+    min-height: 567px;
+  }
+  .hx-hb-top {
+    height: 158px;
+  }
+  .hx-hb {
+    top: 50px;
+  }
+  .t-sm {
+    margin-top: 50px;
+    height: 121px;
+  }
+}
+@media (min-width: 375px) and (max-width: 414px) {
+  /*媒体查询ios6*/
+  body,
+  .waikuang,
+  .hong-bg {
+    min-height: 627px;
+  }
+  .hx-hb {
+    top: 40px;
+  }
+  .hx-hb-top {
+    height: 156px;
+  }
+  .t-sm {
+    margin-top: 30px;
+    height: 121px;
+  }
+}
+@media (min-width: 414px) and (max-width: 600px) {
+  body,
+  .waikuang,
+  .hong-bg {
+    min-height: 736px;
+  }
+  .hx-hb {
+    top: 80px;
+  }
+  .hx-hb-top {
+    height: 198px;
+  }
+  .t-sm {
+    margin-top: 90px;
+    height: 121px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  /*媒体查询ios6 plus*/
+  body,
+  .waikuang,
+  .hong-bg {
+    min-height: 1024px;
+  }
+  .hx-hb {
+    top: 80px;
+  }
+  .hx-hb-top {
+    height: 228px;
+  }
+  .t-sm {
+    margin-top: 90px;
+    height: 121px;
+  }
+}
